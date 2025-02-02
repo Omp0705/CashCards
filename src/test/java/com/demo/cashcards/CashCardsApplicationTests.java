@@ -24,6 +24,9 @@ class CashCardsApplicationTests {
 	@Autowired
 	private MockMvc mvc;
 
+
+	
+
 	@Test
 	void shouldReturnACashCardWhenRequested() throws Exception{
 		this.mvc.perform(get("/cashcards/99"))

@@ -50,6 +50,7 @@ public class CashCardController {
         //         }
         //     }
         // );
-        return ResponseEntity.ok(this.cardRepository.findByOwner(authentication.getName()));
+        return ResponseEntity.ok(this.cardRepository.finAll());
     }
 }
+
